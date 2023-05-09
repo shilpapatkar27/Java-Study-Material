@@ -1,0 +1,11 @@
+package com.Multi.Threading;
+
+public class SampleThread  extends Thread{
+	
+	public void run() { 
+		System.out.println("Inside SampleThread"); 
+		System.out.println("Current Thread: " + 
+		Thread.currentThread().getName()); 
+		} 
+	} 
+		

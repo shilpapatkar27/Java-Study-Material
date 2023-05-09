@@ -1,0 +1,13 @@
+package com.Strings;
+
+//count the total number of characters in a string
+
+public class CharcterCount {
+	public static void main (String [] args) {
+		
+		String string="Hello Shilpa ! How are you";
+		
+		
+	}
+
+}

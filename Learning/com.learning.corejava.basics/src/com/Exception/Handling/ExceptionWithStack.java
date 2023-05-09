@@ -1,0 +1,32 @@
+package com.Exception.Handling;
+
+public class ExceptionWithStack {
+
+    public static void main(String[] args) {
+    	
+        ExceptionWithStack obj=new ExceptionWithStack();
+        
+        int[] evenNumbers=new int[]{2,4,6,8,10};
+        
+        try{
+            obj.printArray(evenNumbers);
+        }catch(Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+    void printArray(int[] numbers) {
+        System.out.println(numbers[0]);
+        System.out.println(numbers[1]);
+        System.out.println(numbers[2]);
+        System.out.println(numbers[3]);
+        System.out.println(numbers[4]);
+        
+        try {
+            System.out.println(numbers[5]);
+        }catch(Exception e) {
+            System.out.println("ArrayIndex out of bound");
+            throw e;
+        }
+    }
+}

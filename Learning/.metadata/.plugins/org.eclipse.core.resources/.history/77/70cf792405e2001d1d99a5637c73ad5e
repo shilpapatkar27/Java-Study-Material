@@ -1,0 +1,40 @@
+package com.jdbc.operations;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class RetrieveProduct implements Runnable {
+
+	
+	 public void run() {
+	        System.out.println("Start Retrieving the products...");
+	        Statement stmt=null;
+	    
+		     try {
+		     	ConnectionPool newCon=MyConnectionPool.getConnection();
+		     
+		         stmt=newCon.con.createStatement();
+		         for(int i=20;i<50;i++) {
+			            ResultSet rs=stmt.executeQuery("SELECT COUNT(*)\r\n"+ "FROM product;");  
+			            while(rs.next())  
+			                System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));  
+			            	System.out.println("End");
+		         }
+		     }catch(Exception e) {
+		         System.out.println(e.getMessage());
+		     }finally{
+		         if(stmt!=null)
+						try {
+							stmt.close();
+						} catch (SQLException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+		     }
+		     System.out.println("Retrieved completed...");
+	 }
+
+}

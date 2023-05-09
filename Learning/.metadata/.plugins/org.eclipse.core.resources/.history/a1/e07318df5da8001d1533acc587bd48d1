@@ -1,0 +1,17 @@
+package com.self.practise.program;
+
+public class Carvariable {
+	
+	//static is keyword
+	static {
+		System.out.println("We are in static block");
+	}
+	String model;           // object  instance property
+	static int buildYear=2020;
+	
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

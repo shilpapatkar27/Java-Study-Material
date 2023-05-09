@@ -1,0 +1,7 @@
+package com.Strings;
+
+//count the total number of characters in a string
+
+public class CharcterCount {
+
+}

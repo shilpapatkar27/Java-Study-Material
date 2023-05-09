@@ -1,0 +1,11 @@
+package com.self.practise.program;
+
+public class ASCIIValue {
+	public static void main (String[] args) {
+	char char1='a';
+	char char2='b';
+	char char3='c';
+		
+	}
+
+}

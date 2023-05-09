@@ -1,0 +1,21 @@
+package com.Exception.Handling;
+
+public class CustomExceptionTest {
+	
+	public static void main(String [] args) {
+		
+		int num1=10,num2=20;
+		
+		try {
+		if(num1<num2) {
+			throw new CustomException("Negative");
+		}
+		}catch(Exception e){
+			System.out.println(e.getMessage());
+			
+		}
+	}
+	
+
+}
+

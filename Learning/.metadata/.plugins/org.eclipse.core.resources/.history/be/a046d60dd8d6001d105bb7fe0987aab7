@@ -1,0 +1,13 @@
+package com.Multi.Threading;
+
+/*Example to demonstrate how unsynchronized method is not thread
+safe.
+Example will create a two thread that will write the integer data
+to shared array. One thread will try to write 1,2,3(start with 1) and second
+will try to write 11,12,13(Thread initialize to start at 11). Eventually one
+may override other’s data.
+*/
+
+public class SimpleArray {
+
+}

@@ -1,0 +1,18 @@
+package com.self.practise.program;
+
+public class ClassExample1 {
+	
+	//state or field
+	private String name="shilpa";
+	
+	//behaviour or methods
+	public void displayInfo() {
+		
+	}
+	
+	public static void main(String ... args) {
+		
+		ClassExample1 obj1 = new ClassExample1();
+		
+	}
+}

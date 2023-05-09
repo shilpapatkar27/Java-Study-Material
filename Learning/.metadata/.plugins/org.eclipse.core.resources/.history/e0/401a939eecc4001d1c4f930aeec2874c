@@ -1,0 +1,14 @@
+package com.Exception.Handling;
+
+public class CustomException{
+	
+	String msg;
+
+	public CustomExceptionTest(String msg) {
+		super();
+		this.msg = msg;
+	}
+	
+	
+
+}

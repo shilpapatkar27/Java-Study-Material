@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.IndexedColors"/>
+    <fullyQualifiedTypeName name="org.apache.poi.hssf.record.cf.FontFormatting"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.FontFormatting"/>
+</qualifiedTypeNameHistroy>

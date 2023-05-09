@@ -1,0 +1,21 @@
+package com.Strings;
+
+//count the total number of characters in a string
+
+public class CharcterCount {
+	public static void main (String [] args) {
+		
+		String string="Hello Shilpa ! How are you";
+		int count=0;
+		int i=0;
+		
+		if(string.charAt(i)!=0)
+		{
+			count=count+1;
+			i=i+1;
+			System.out.println(count);
+		}
+			
+	}
+
+}

@@ -1,0 +1,36 @@
+package com.Exception.Handling;
+
+public class FinallyExample {
+	
+	public static void main(String [] args) {
+		
+		try {
+			int a=10;
+			int b=0;
+			
+			System.out.println("Value of a:" +a);
+			System.out.println("Value of b:" +b);
+			
+			//System.exit(0); //finally won't get execute.
+			
+			int c = a / b;
+			System.out.println("a / b = " + c);
+		} catch (Exception e) {
+			System.out.println("Exception Thrown:" +e);
+			
+			e.printStackTrace();
+			//return;  finally will be executed.
+		}
+		
+		  /*
+         * finally is a block.
+         * Should be written after all the catch block.
+         * will be executed always regardless of exception occured or not. (in exit() it will not executed)
+         * close the resources(DB connection, files) in finally.  
+         */
+        finally {
+          System.out.println("Finally block executed!");
+        }
+	}
+
+}

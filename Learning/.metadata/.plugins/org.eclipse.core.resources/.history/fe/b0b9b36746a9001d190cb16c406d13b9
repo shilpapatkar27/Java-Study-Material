@@ -1,0 +1,24 @@
+package com.self.practise.program;
+
+import com.self.practise.program.AnimalsuperKeyword1.Dog;
+
+public class AnimalsuperKeyword2 extends Dog{
+		
+		//default constructor 
+			AnimalsuperKeyword2()
+			{
+				
+		     super();  
+			 System.out.println("Dog is wild animal");  
+			
+		}
+			
+			public static void main(String [] args) {
+				AnimalsuperKeyword2 ak2 = new AnimalsuperKeyword2();
+				
+				
+			}
+		
+}
+
+

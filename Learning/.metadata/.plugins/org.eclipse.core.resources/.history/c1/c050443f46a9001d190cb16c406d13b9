@@ -1,0 +1,36 @@
+package com.self.practise.program;
+
+
+//Base class or Parent class
+public class AnimalsuperKeyword1 {
+	
+	public  String animalType;
+	
+}
+	
+	// Dog is child class of AnimalsuperKeyword1
+	 class Dog extends AnimalsuperKeyword1{
+		
+	    //default constructor  
+		Dog(){
+			String color="White";
+			System.out.println("Dog color is :" +super.animalType);
+			
+		}
+		
+		
+
+	 public static void main(String [] args) {
+		 AnimalsuperKeyword1 ak1 = new AnimalsuperKeyword1();
+		 
+		 try {
+			System.out.println("Dog color is :" +animalType);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		 
+	 }
+	
+	
+}

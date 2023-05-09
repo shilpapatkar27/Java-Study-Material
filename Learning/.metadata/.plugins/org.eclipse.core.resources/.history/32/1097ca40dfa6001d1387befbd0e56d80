@@ -1,0 +1,15 @@
+package com.self.practise.program;
+
+public class ClassExample1 {
+	
+	//state or field
+	private String name="shilpa";
+	
+	//behaviour or methods
+	public void display() {
+		
+	}
+	
+	
+
+}
